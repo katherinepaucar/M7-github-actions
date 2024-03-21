@@ -1,9 +1,9 @@
-name: Publis Github Actions
+name: Publish Github Actions
 
 on:
   push:
     branches:
-       - main
+      - main
 
 jobs:
   cd:
