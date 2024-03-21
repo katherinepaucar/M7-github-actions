@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.containerRoot{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.text-error{
+  color:red;
+}
