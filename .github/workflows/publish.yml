@@ -1,0 +1,19 @@
+name: Publis Github Actions
+
+on:
+  push:
+  branches:
+    -main
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Install
+      run: npm i
+    
+    - name: Deploy
+      run: npm run deploy
