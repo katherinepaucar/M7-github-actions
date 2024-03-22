@@ -9,11 +9,15 @@ jobs:
   cd:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Install
-        run: npm i
-      
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
       - name: Deploy
         run: npm run deploy
+
